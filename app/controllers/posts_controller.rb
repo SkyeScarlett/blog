@@ -35,12 +35,14 @@ before_action :set_post, only: [ :show, :edit, :update, :destroy]
 			render :edit
 		end
 
+	end
+
 	def destroy
 	
 		@post.destroy
 		redirect_to posts_path
 	end
-	end
+	
 
 
 	private
